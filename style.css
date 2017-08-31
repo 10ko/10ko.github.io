@@ -77,17 +77,10 @@ h1 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#57aa9c',GradientType=1 ); /* IE6-9 */
 }
 
-
-
-
-
 .container {
   width: 100%;
 
 }
-
-
-
 
 .highlighted {
   color: #1aab95;
