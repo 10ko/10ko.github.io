@@ -1,41 +1,57 @@
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+
+  font-family: 'Nunito Sans', sans-serif;
+
   font-weight: 300;
-  font-size: 1.5em;
   color: #444;
   margin:0;
+  height: 100%;
+
 }
+
+a:link { color: #444; text-decoration: underline; }
+
+a:visited { color: #444; }
+a:hover { color: #1aab95; }
+a:hover span.highlight { color: #1aab95; }
+a:active { color: #444; }
 
 h1 {
   font-size: 28px;
   display: inline-block;
   line-height: 60px;
   margin: 0;
+  font-weight: 300;
 }
 
 .header {
-  padding: 0 36px;
-  background: -moz-linear-gradient(45deg, rgba(254,255,255,1) 0%, rgba(254,255,255,0.82) 22%, rgba(175,175,175,0.18) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, rgba(254,255,255,1) 0%,rgba(254,255,255,0.82) 22%,rgba(175,175,175,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, rgba(254,255,255,1) 0%,rgba(254,255,255,0.82) 22%,rgba(175,175,175,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2eafafaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  position: relative;
-  height: 60px;
+  padding: 32px 64px;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 10;
+  top: 0;
+  border-bottom: 1px solid #eeeeee;
 }
+
+.header h1 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
 
 .navigation {
   list-style: none;
   float: right;
   margin: 0;
   font-size: 18px;
-
 }
 
 .navigation li {
   float: left;
   line-height: 60px;
   padding: 0 16px;
+  overflow: hidden;
 }
 
 .navigation li:last-of-type {
@@ -44,86 +60,215 @@ h1 {
 
 .navigation li.hire-me a {
   border-radius: 2px;
-  color: white;
-  background-color: #1aab95;
+  color: #1aab95;
+
   padding: 0 16px;
   border: 1px solid #1aab95;
   height: 32px;
   line-height: 32px;
   display: inline-block;
+  margin-left: 24px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
 }
-.navigation li.hire-me:hover a {
+.navigation li.hire-me a:hover {
   cursor: pointer;
   -webkit-transition: background-color .25s ease-in-out;
      -moz-transition: background-color .25s ease-in-out;
       -ms-transition: background-color .25s ease-in-out;
        -o-transition: background-color .25s ease-in-out;
           transition: background-color .25s ease-in-out;
-  background-color: transparent;
-  color: #1aab95;
+  background-color: #1aab95;
+  color: white;
   border: 1px solid #1aab95;
-  text-decoration: underline;
 }
 
-.header .border-div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(left, rgba(255,255,255,1) 23%, rgba(87,170,156,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 23%,rgba(87,170,156,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(255,255,255,1) 23%,rgba(87,170,156,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#57aa9c',GradientType=1 ); /* IE6-9 */
+
+/* CONTENT */
+
+.content {
+
+  padding: 80px 0;
+
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+.content .section {
+  margin-bottom: 64px;
 }
 
-.container {
-  width: 100%;
+.content .section:last-of-type {
+  margin-bottom: 0;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.content h3 {
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.content span.highlight {
+  font-weight: 600;
+  color: #222;
 
 }
 
-.highlighted {
-  color: #1aab95;
-  font-weight: 500;
+.content.contacts {
+  border-bottom: 0;
+  margin-bottom: 64px;
 }
 
-.contact-list {
-  list-style: none;
-  float:left;
+.content.intro {
+  margin-top: 60px;
+}
+
+.content.intro h2 {
   margin: 0;
-  width: 30%;
+  font-size: 32px;
+  margin-bottom: 32px;
+  font-weight: 600;
 }
 
-@media (max-width: 636px) {
+
+.content.intro p {
+  margin: 0;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+
+.content.past-work .section.toolbox .tools {
+  display: -webkit-flex;
+  display: flex;
+  // -webkit-align-items: center;
+  // align-items: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+}
+
+.content.past-work .section.toolbox .tools p{
+  flex: 1 0 0;
+}
+
+.content ul {
+  padding: 0;
+  list-style: none;
+}
+.content ul p {
+  margin: 0;
+}
+
+.content.contacts .contact-list {
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.content.contacts .contact-list li {
+  float: left;
+  margin-right: 24px;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+}
+.content.contacts .contact-list li:hover {
+  cursor: pointer;
+}
+
+.content.contacts .contact-list li:hover a {
+  color: #1aab95;
+}
+.content.contacts .contact-list li a {
+  padding-left: 32px;
+}
+
+.content.contacts .contact-list li.twitter-icon { background: url("images/twitter-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.twitter-icon:hover { background: url("images/twitter-icon-bold.svg") no-repeat center left; }
+.content.contacts .contact-list li.github-icon { background: url("images/github-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.github-icon:hover { background: url("images/github-icon-bold.svg") no-repeat center left; }
+.content.contacts .contact-list li.linkedin-icon { background: url("images/linkedin-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.linkedin-icon:hover { background: url("images/linkedin-icon-bold.svg") no-repeat center left; }
+.content.contacts .contact-list li.instagram-icon { background: url("images/instagram-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.instagram-icon:hover { background: url("images/instagram-icon-bold.svg") no-repeat center left; }
+.content.contacts .contact-list li.medium-icon { background: url("images/medium-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.medium-icon:hover { background: url("images/medium-icon-bold.svg") no-repeat center left; }
+.content.contacts .contact-list li.npm-icon { background: url("images/npm-icon.svg") no-repeat center left; }
+.content.contacts .contact-list li.npm-icon:hover { background:;  url("images/npm-icon-bold.svg") no-repeat center left}
+
+
+
+/* END of CONTENT */
+
+/* FOOTER */
+
+.footer {
+  padding: 32px 64px;
+  background-color: #1aab95;
+  box-sizing: border-box;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+  line-height: 60px;
+  color: #025346;
+}
+
+.footer p a {
+  color: #025346;
+}
+
+@media (max-device-width: 700px) {
+
   .header {
-    padding: 0 36px;
-    background: -moz-linear-gradient(45deg, rgba(254,255,255,1) 0%, rgba(254,255,255,0.82) 22%, rgba(175,175,175,0.18) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(254,255,255,1) 0%,rgba(254,255,255,0.82) 22%,rgba(175,175,175,0.18) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(254,255,255,1) 0%,rgba(254,255,255,0.82) 22%,rgba(175,175,175,0.18) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#2eafafaf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    position: relative;
-    height: 120px;
-    min-height: 60px;
-  }
-  .header h1 {
-    display: block;
+    padding: 8px 32px;
   }
   .navigation {
-    list-style: none;
-    float: left;
-    margin: 0;
-    font-size: 18px;
-    padding-left: 0;
+    display: none;
+  }
+  .content {
+    padding: 32px;
+  }
+  .content.intro {
+    margin-top: 16px;
   }
 
-  .navigation li {
-    float: left;
-    line-height: 60px;
-    padding: 0 16px;
+  .content.intro h2 {
+    font-size: 28px;
   }
-  .navigation li:first-of-type {
-    padding-left: 0;
+
+  .content.past-work .section.toolbox .tools{
+    display: block;
   }
+
+  .footer {
+    padding: 32px;
+    background-color: #1aab95;
+    box-sizing: border-box;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  .footer p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.35;
+    color: #025346;
+  }
+
 
 
 }
