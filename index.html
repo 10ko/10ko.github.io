@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
+<!--
+  Hi! Hello! Hey, stranger!
+  Since you are here, let me introduce you around.
+  tenko.it is a very simple website written in static HTML and CSS.
+  No js, no fancy stuff. I used a text editor and a templating tool I wrote for the occasion.
+  It's called boxedjs and you should check it out! It's a WIP but all kind of feedback are very welcome!
+  You can find it at https://github.com/10ko/boxedjs.
+
+  Have a lovely day, stranger!
+-->
+  <head>
   <title>Emanuele Libralato - tenko.it</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:500,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <div id="who" class="container">
-    <div class="content">
-        <h1>Hallo!</h1>
-        <p>My name is Emanuele Libralato, I am a technologist originally from Italy and currently based in <span class="crossed">Latina</span> <span class="crossed">Rome</span> <span class="crossed">Turin</span> <span class="crossed">Venice</span> <span class="crossed">London</span> Berlin.</p>
-        <p>My background is in Software Engineering and I am interested in investigating intersections: between Art, Technology and Design.<br>Between Analog and Digital worlds.</p>
-        <p>I like to play with technology, I am in love with natural interfaces and I believe in a future without touchscreens.</p>
+  <body>
+    <div class="header">
+  <a class="home-link" href="/"><h1>Emanuele Libralato</h1></a>
+  <ul class="navigation">
+    <li class="hire-me"><a href="mailto:hi@tenko.it">Hire me!</a></li>
+  </ul>
+</div>
+      <div class="content intro">
+  <h2>Hi, I am Emanuele, a passionate Technologist living and working in Berlin. I write code (mostly) for the web.</h2>
+  <p>My goal is to empower my users through technology and great experiences. My clients hire me to design, implement and test user-centered solutions to their business problems and to build prototypes to explore uncharted market segments.</p>
+  <p><span class="highlight">I am currently fully booked until mid-November.</span> Got some interesting project you'd like to talk about? Send me an <a href="mailto:hi@tenko.it">email</a> and let's get a coffee.</p>
+</div>
+      <div class="content past-work">
+  <div class="section">
+    <h1>Past clients</h1>
+    <p>After four years working mostly on <span class="highlight">backend systems</span> between London (UK) and Venice (IT), I moved to Berlin and started freelancing, mostly as <span class="highlight">frontend engineer</span>. In the last 3+ years I had the chance of working with some of the Berlin and Europe's best agencies and studios, including
+    <a href="https://futurice.com" target="_blank"><span class="highlight">Futurice</span></a>, <a href="http://www.functionalaesthetics.com" target="_blank"><span class="highlight">functional aesthetics</span></a>, <a href="http://www.nand.io" target="_blank"><span class="highlight">Studio NAND</span></a>, <a href="http://www.useeds.de/en" target="_blank"><span class="highlight">Useeds</span></a>, <a href="http://www.iconmobile.com" target="_blank"><span class="highlight">Iconmobile</span></a>, <a href="https://www.bcg.com" target="_blank"><span class="highlight">The Boston Consulting Group</span></a>, <a href="http://www.metadesign.com" target="_blank"><span class="highlight">Metadesign</span></a>, <a href="http://www.interbrand.com" target="_blank"><span class="highlight">Interbrand</span></a>.</p>
+    <p>Unfortunately, due to the confidentiality of the projects, I am not able to disclose the name of their clients nor any specific detail.</p>
+  </div>
+  <div class="section toolbox">
+    <h1>My toolbox</h1>
+    <p>In the past years I worked on a multitude of projects spanning between <span class="highlight">interactive installations</span>, <span class="highlight">web applications</span>, <span class="highlight">mobile apps</span> and <span class="highlight">hardware</span> and <span class="highlight">iot devices</span>. I feel comfortable in all the different stack of modern web applications and I like to play with off-screen technologies. I believe in an <span class="highlight">accessible future</span> without touchscreens.</p>
+    <p>Some of the tools I feel comfortable working with are:</p>
+    <div class="tools">
+      <p>HTML, JS/ES6, AngularJS, ReactJS, CSS, SASS, Babel, Webpack, Grunt, Gulp, Jasmine, Jest, ionic, phonegap.</p>
+      <p>Java, Node, PHP, SQL, MongoDB, Elasticsearch, Play, Spring, Java-based ORMs, AWS, Ansible, Docker.</p>
+      <p>openframeworks, processing, arduino, hw prototyping.</p>
     </div>
   </div>
-  <div id="what" class="container">
-    <div class="content">
-        <p>I am currently building <a href="http://www.superclock.info" target="_blank">Superclock</a> and <a href="http://www.joinrs.com" target="_blank">Joinrs</a>.</p>
-        <p>In the last years I have been freelancing as frontend engineer for companies and agencies like <a href="http://www.functionalaesthetics.com" target="_blank">Functional Aesthetics</a>, <a href="http:///www.futurice.com" target="_blank">Futurice</a>, <a href="http://www.interbrand.com" target="_blank">Interbrand</a> and their clients.</p>
-        <p>My current toolbox contains Java, PHP, Javascript, SQL, MongoDB, Elasticsearch, Play, Spring, AngularJS, ReactJS, SASS, LESS, AWS, ionic, just to cite few.</p>
-    </div>
-  </div>
-  <div id="where" class="container">
-    <div class="content">
-      <p>I firmly believe in collaboration as main source of creativity and I am a very sociable person!</p>
-      <p>If you want to meet me in person, I spend most of my working time at my desk at <a href="http://www.betahaus.com">Betahaus</a>: come and say Hi!<br>Alternatively, you can contact me in digital spaces like:</p>
-      <div class="list-container">
-        <ul class="contact-list">
-           <li><a href="https://www.twitter.com/iamtenko" target="_blank">Twitter</a></li>
-           <li><a href="https://www.github.com/10ko" target="_blank">Github</a></li>
-           <li><a href="https://www.linkedin.com/in/libralato" target="_blank">Linkedin</a></li>
-         </ul>
-         <ul class="contact-list">
-           <li><a href="https://instagram.com/iamtenko" target="_blank">Instagram</a></li>
-           <li><a href="https://vimeo.com/iamtenko" target="_blank">Vimeo</a></li>
-         </ul>
-      </div>
-       <p>or you could just drop me an <a href="mailto:hi@tenko.it">email.</a> </p>
-    </div>
-  </div>
-</body>
+</div>
+      <div class="content contacts">
+  <h1>Where to find me</h1>
+  <p>At the moment I live and work in <span class="highlight">Berlin, Germany</span>.
+  <br>Say hi if you happen to be in town, feel free to reach me via <a href="mailto:hi@tenko.it">email</a> or find me in digital spaces like:</p>
+  <ul class="contact-list">
+    <li class="twitter-icon"><a href="https://www.twitter.com/iamtenko" target="_blank">twitter</a></li>
+    <li class="github-icon"><a href="https://www.github.com/10ko" target="_blank">github</a></li>
+    <li class="linkedin-icon"><a href="https://www.linkedin.com/in/libralato" target="_blank">linkedin</a></li>
+    <li class="instagram-icon"><a href="https://instagram.com/iamtenko" target="_blank">instagram</a></li>
+    <li class="medium-icon"><a href="https://medium.com/@iamtenko" target="_blank">medium</a></li>
+    <li class="npm-icon"><a href="https://www.npmjs.com/~tenko" target="_blank">npm</a></li>
+  </ul>
+</div>
+    <div class="footer">
+  <p>&copy; Emanuele Libralato 2017 - Built with &#10084; and <a href="https://github.com/10ko/boxedjs" target="_blank">boxedjs</a>.</p>
+</div>
+  </body>
 </html>
