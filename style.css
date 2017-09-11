@@ -231,7 +231,7 @@ h1 {
   color: #025346;
 }
 
-@media (max-device-width: 700px) {
+@media (max-width: 1024px) {
 
   .header {
     padding: 8px 32px;
